@@ -18,7 +18,7 @@ Add `VinceG/zillow`` as a require dependency in your ``composer.json`` file:
 
 .. code-block:: bash
 
-    php composer.phar require VinceG/zillow:~1.0
+    php composer.phar require vinceg/zillow:~1.0
 
 Usage
 -----
