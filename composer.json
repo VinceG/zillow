@@ -1,0 +1,36 @@
+{
+    "name": "VinceG/zillow",
+    "type": "application",
+    "description": "Zillow PHP API Wrapper",
+    "keywords": ["zillow", "php", "api"],
+    "homepage": "https://github.com/VinceG/zillow",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent Gabriel",
+            "email": "vadimg88@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/VinceG/zillow/issues"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "guzzlehttp/guzzle": "4.*",
+        "fabpot/goutte": "~2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Client\\": "Zillow/"
+        },
+        "psr-0": { "Zillow": "." }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x.x-dev"
+        }
+    }
+}
