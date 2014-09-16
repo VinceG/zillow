@@ -44,21 +44,21 @@ class ClientTest extends \PHPUnit_Framework_TestCase
 
     public function testCreatesDefaultClient()
     {
-        $client = new ZillowClient();
+        $client = new ZillowClient('xxxxx');
         $this->assertInstanceOf('GuzzleHttp\\ClientInterface', $client->getClient());
     }
 
     public function testUsesCustomClient()
     {
         $guzzle = new GuzzleClient();
-        $client = new ZillowClient();
+        $client = new ZillowClient('xxxxx');
         $this->assertSame($client, $client->setClient($guzzle));
         $this->assertSame($guzzle, $client->getClient());
     }
 
     public function testZWSID()
     {
-    	$client = new ZillowClient();
-        $this->assertSame($client->setZWSID('xxxxx'), $client->getZWSID());
+    	$client = new ZillowClient('xxxxx');
+        $this->assertSame('xxxxx', $client->getZWSID());
     }
 }
