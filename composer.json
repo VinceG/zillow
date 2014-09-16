@@ -1,9 +1,9 @@
 {
-    "name": "VinceG/zillow",
+    "name": "vinceg/zillow",
     "type": "application",
     "description": "Zillow PHP API Wrapper",
     "keywords": ["zillow", "php", "api"],
-    "homepage": "https://github.com/VinceG/zillow",
+    "homepage": "https://github.com/vinceg/zillow",
     "license": "MIT",
     "authors": [
         {
@@ -12,7 +12,7 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/VinceG/zillow/issues"
+        "issues": "https://github.com/vinceg/zillow/issues"
     },
     "require": {
         "php": ">=5.4.0",
