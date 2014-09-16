@@ -3,6 +3,9 @@ Zillow, PHP Wrapper
 
 This is a simple PHP Wrapper for the Zillow API services.
 
+.. image:: https://travis-ci.org/VinceG/zillow.svg?branch=master
+    :target: https://travis-ci.org/VinceG/zillow
+
 Requirements
 ------------
 
