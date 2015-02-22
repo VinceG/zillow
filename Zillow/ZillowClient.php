@@ -298,10 +298,16 @@ class ZillowClient
         $this->setStatus($this->response['message']['code'], $this->response['message']['text']);
 
         // If request was succesful then parse the result
-        if($this->isSuccessful()) {
+         if($this->isSuccessful()) {
             if($this->response['response'] && isset($this->response['response']['results']) && count($this->response['response']['results'])) {
                 foreach($this->response['response']['results'] as $result) {
-                    $this->results[$result['zpid']] = $result;
+                    if (isset($result[0])) { // multiple results
+                        foreach ($result as $r) {
+                            $this->results[$r['zpid']] = $r;
+                        }
+                     } else { // one result
+                        $this->results[$result['zpid']] = $result;
+                    }
                 }
             }
         }
